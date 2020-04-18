@@ -31,6 +31,8 @@
   <script src="components/load-dynamic-components.js"></script>
   <script src="components/mixins.js"></script>
 
+  <script src="plugins/aboutMe.js"></script>
+
 </head>
 <body>
   <div id="app" style="margin-bottom: 100px;">
@@ -71,7 +73,9 @@
 
         setTimeout(() => {
           this.$refs.childMethod.showCmpName();
-        })
+        }, 3000)
+
+        console.log(this.$me('Jaume', 28));
       },
       data () {
         return {
